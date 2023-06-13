@@ -1,8 +1,28 @@
 {
   "name": "danmu",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "source": "src/public/index.html",
   "repository": "git@github.com:Wecle/danmu.git",
   "author": "Wecle <837968732@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+	"dev": "parcel ./src/public/index.html",
+    "rollup:dev": "rimraf dist && rollup -c rollup.config.js -w",
+    "rollup:build": "rimraf dist && rollup -c rollup.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.1",
+    "parcel": "^2.9.2",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.25.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tslib": "^2.5.3",
+    "typescript": "^5.1.3"
+  }
 }

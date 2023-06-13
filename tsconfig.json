@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": false,
+    // "typeRoots": ["./types", "./node_modules/@types"]
+  },
+  "types": ["jest"]
+}
