@@ -1,0 +1,8 @@
+{
+  "name": "danmu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Wecle/danmu.git",
+  "author": "Wecle <837968732@qq.com>",
+  "license": "MIT"
+}
